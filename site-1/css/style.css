@@ -1,0 +1,43 @@
+* {
+  transition: all 250ms ease-in-out;
+}
+
+.container {
+  position: absolute;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  left: 50%;
+}
+
+.block {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-family: "Courier", serif;
+}
+.block .citation {
+  font-size: 22px;
+  line-height: 35px;
+}
+.block .author {
+  font-family: "Roboto", sans-serif;
+  color: green;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  line-height: 35px;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  opacity: 0;
+}
+.first:hover .citation {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  letter-spacing: 1px;
+}
+.first:hover .author {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
